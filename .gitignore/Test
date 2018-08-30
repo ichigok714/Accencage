@@ -1,0 +1,41 @@
+1-
+<?php
+
+$tab = array [10, 8, 9, 11, 63, 3];
+
+/**
+ * Returns ordered given $tab ascending or descending
+ * 
+ * @param $tab
+ * @param string $ascOrDesc
+ * @return mixed
+ */
+function order($tab, $ascOrDesc = 'asc') {
+    return $tab;
+}
+
+var_dump(order($tab, 'desc'));
+var_dump(order($tab, 'asc'));
+
+/**
+ * Returns odd or even number from given $tab
+ *
+ * @param $tab
+ * @param string $oddOrEven
+ * @return mixed
+ */
+function oddOrEven($tab, $oddOrEven = 'even') {
+    return $tab;
+}
+
+var_dump(oddOrEven($tab, 'even'));
+var_dump(oddOrEven($tab, 'odd'));
+
+2-
+SELECT a.authorId, a.name, count(b.bookId),
+FROM books b
+INNER JOIN author a USING authorId
+GROUP BY a.name
+
+3-
+What's wrong with this JS code : Le code utilisé ne fonctionne pas car 'number' n'a pas été défini.
